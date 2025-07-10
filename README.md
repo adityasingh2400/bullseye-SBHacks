@@ -6,6 +6,8 @@
 
 > *“No more guesswork—just the right practice at the right level.”*
 
+[![Watch the demo on Devpost](https://img.shields.io/badge/Watch%20demo-Devpost-blue?logo=playstation)](https://devpost.com/software/maple-w1c8kd)
+
 ---
 
 ## 📚 Inspiration
@@ -14,10 +16,10 @@ Both in high-school and college, professors and teachers frquently utilize a uni
 ---
 
 ## 🚀 What Bullseye Does
-1. **Upload PDF** Students drag-and-drop previous tests or worksheets.  
-2. **AI Question Generator** OpenAI LLM + parsed PDF content → brand-new questions that mirror the teacher’s wording & rigor.  
-3. **Adaptive Practice UI** Answers are graded inline; mastery per topic is tracked in real time.  
-4. **Personalised Feedback** Immediate hints & a mastery dashboard to focus the next study session.
+1. **Upload PDF** - Students drag-and-drop previous tests or worksheets.  
+2. **AI Question Generator** - OpenAI LLM + parsed PDF content → brand-new questions that mirror the teacher’s wording & rigor.  
+3. **Adaptive Practice UI** - Answers are graded inline; mastery per topic is tracked in real time.  
+4. **Personalised Feedback** - Immediate hints & a mastery dashboard to focus the next study session.
 
 ---
 
@@ -25,13 +27,14 @@ Both in high-school and college, professors and teachers frquently utilize a uni
 
 | Layer | Tech | Why we chose it |
 |-------|------|-----------------|
-| **Frontend** | React + Vite • Tailwind CSS | Fast dev setup & utility-first styling |
-| **Backend** | Node.js • Express.js | Familiar JS stack for rapid API prototyping |
-| **AI** | OpenAI LLMs | High-quality question generation & answer analysis |
-| **PDF Parsing** | **Aryn** | Structured text extraction from academic PDFs |
+| **Frontend** | React + Vite • Tailwind CSS | Lightning-fast hot-reloads and utility-first styling let us prototype UI changes in minutes. |
+| **Backend** | Node.js • Express.js | A single-language JS stack kept the learning curve shallow while helper libs simplified HTTP calls and live-reload during frantic hackathon coding |
+| **AI** | OpenAI LLMs | Delivers context-matched question generation, answer feedback, and mastery scoring in one shot |
+| **PDF Parsing** | **Aryn** | Turns messy textbook PDFs into clean, structured JSON ready for GPT-4o—no manual preprocessing. |
 
-<details>
-<summary>High-Level Architecture</summary>
+
+<h2 align="center">High-Level Architecture</h2>
+
 
 ```mermaid
 graph TD
@@ -58,7 +61,7 @@ graph TD
   Practice -->|POST /answer| API
   API -->|score| Dashboard
 ```
-</details>
+
 ---
 
 ## 🥊 Challenges We Faced
