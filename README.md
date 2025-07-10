@@ -77,3 +77,5 @@ If you had told us 48 hours earlier that two classmates with **zero full-stack b
 Most hackathon recaps list technologies; we discovered something bigger: the thrill—and terror—of shipping when you have no idea what you’re doing. We learned how to google error messages at 3 a.m., how to keep a server from panicking when two teammates push conflicting code, and how to breathe when an API key fails 15 minutes before judging. More importantly, we learned that inexperience isn’t a drawback—it’s an accelerant. Each bug we squashed and endpoint we hooked up reinforced that we could actually build something end-to-end—and now, starting a new project feels like an opportunity, not a roadblock.
 
 ---
+## © License
+Released under the MIT License—see [License](./LICENSE) for details.
